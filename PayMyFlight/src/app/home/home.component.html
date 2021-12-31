@@ -1,0 +1,144 @@
+
+<div id="page-container" main-dom="">
+
+    <!-- Page Loader -->
+    <!-- <loader></loader> -->
+  
+  
+  
+    <!-- Search -->
+    <div class="b-container b-container__search">
+  
+      <div class="bg-mask"></div>
+  
+      <div class="b-search">
+          <h2 class="b-search_title">Search for Flights anywhere</h2>
+  
+          <!-- <form [formGroup]="loginForm"autocomplete="off" (ngSubmit)="onSubmit()" novalidate> -->
+            <form [formGroup]="loginForm"autocomplete="off" novalidate>
+          <!-- <div class="f-input-group f-input-group__radio text-center" ng-init="flightway = 'roundtrip'"> -->
+            <div class="f-input-group f-input-group__radio text-center">
+              <label class="radio">
+                <!-- <input type="radio" name="rootType"formControlName="rootType" id="RoundTrip"[(ngModel)]="defaultFlag" [value]="2" class="tripType" (click)="setPaymentMethodType(PAYMENT_METHOD_TYPE.UPI)">  -->
+                  <input type="radio" name="rootType" formControlName="rootType" id="RoundTrip" [(ngModel)]="defaultFlag" [value]="1" (click)="setPaymentMethodType(PAYMENT_METHOD_TYPE.UPI)">
+                  <span class="outer"><span class="inner"></span></span>
+                  Round-Trip
+              </label>
+              <label class="radio">
+                <!-- <input type="radio" name="rootType"formControlName="rootType" id="OneWay"[(ngModel)]="defaultFlag" [value]="1" class="tripType"(click)="setPaymentMethodType(PAYMENT_METHOD_TYPE.CARD)" >  -->
+                  <input type="radio" name="rootType" formControlName="rootType" id="OneWay" [(ngModel)]="defaultFlag" [value]="2" (click)="setPaymentMethodType(PAYMENT_METHOD_TYPE.CARD)">
+                  <span class="outer"><span class="inner"></span></span>
+                  One-Way
+              </label>
+          </div>
+  
+          <!-- Search box -->
+          <div class="b-search-box">
+  
+              <!-- Search form -->
+              <div formGroupName="paymentMethod">
+                                             <!-- OneWay start -->
+                  <div class="f-input-group"*ngIf="((defaultFlag||rootType) == 2)">
+                      <div class="f-input-group__half"formGroupName="card">
+                          <label for="flight-from" class="f-label">Leaving from</label>
+                          <!-- <input type="text" name="flight-from"formControlName="OnewayFromPlace1"
+                          id="flight-from" ng-autocomplete ng-model="result1" details="details1" options="options1"
+                           class="f-input f-input__plane-right" placeholder="Origin"> -->
+                           <input type="text"formControlName="OnewayFromPlace"  id="dynamicUserIdsSecondWay" (keyup)="getUserIdsSecondtWay($event)" 
+                           value="" list="dynmicUserIds"
+                           class="f-input f-input__plane-right" placeholder="Origin">
+                           <datalist id="dynmicUserIds">
+                            <option *ngFor="let item of userList2" [value]="item">{{item}}</option>
+                           </datalist>
+                      </div>
+                      <div class="f-input-group__half"formGroupName="card">
+                        <label for="flight-to" class="f-label">Going to</label>
+                        <!-- <input type="text" name="flight-to"
+                        id="flight-to" ng-autocomplete ng-model="result2" details="details2" options="options2"
+                        class="f-input f-input__plane-left" placeholder="Destination"> -->
+                        <input type="text"formControlName="OnewayToPlace" id="dynamicUserIdsSecondWay1" (keyup)="getUserIdsSecondtWay1($event)" 
+                        value=""  list="toDynmicUserIds" autocomplete="off"autocorrect="off"
+                        class="f-input f-input__plane-left" placeholder="Destination">
+                        <datalist id="toDynmicUserIds">
+                            <option *ngFor="let item of userList1" [value]="item">{{item}}</option>
+                         </datalist>
+                      </div>
+                  </div>
+  
+                  <div class="f-input-group"*ngIf="((defaultFlag||rootType) == 2)">
+                      <div class="f-input-group__half"formGroupName="card">
+                          <label for="f-check-in" class="f-label">Departure</label>
+                          <input type="date" name="f-check-in" id="DepartDate1" formControlName="OnewayDeparture" class="f-input f-input__calendar js-datepicker" placeholder="Depart Date">
+                      </div>
+                  </div>
+                                      <!-- OneWay end -->
+                                      <!-- RoundTrip start-->
+                  <div class="f-input-group"*ngIf="((defaultFlag||rootType) == 1)">
+                    <div class="f-input-group__half"formGroupName="upi">
+                        <label for="flight-from" class="f-label">Leaving from</label>
+                         <input type="text"formControlName="roundTripFromPlace"  id="dynamicUserIdsSecondWay" (keyup)="getUserIdsSecondtWay($event)" 
+                         value="" list="dynmicUserIds"
+                         class="f-input f-input__plane-right" placeholder="Origin">
+                         <datalist id="dynmicUserIds">
+                            <option *ngFor="let item of userList2" [value]="item">{{item}}</option>
+                         </datalist>
+                    </div>
+                    <div class="f-input-group__half"formGroupName="upi">
+                      <label for="flight-to" class="f-label">Going to</label>
+                      <input type="text"formControlName="roundTripToPlace" id="dynamicUserIdsSecondWay1" (keyup)="getUserIdsSecondtWay1($event)" 
+                      value=""  list="toDynmicUserIds" autocomplete="off"autocorrect="off"
+                      class="f-input f-input__plane-left" placeholder="Destination">
+                      <datalist id="toDynmicUserIds">
+                        <option *ngFor="let item of userList1" [value]="item">{{item}}</option>
+                     </datalist>
+                    </div>
+                </div>
+
+                <div class="f-input-group"*ngIf="((defaultFlag||rootType) == 1)">
+                    <div class="f-input-group__half"formGroupName="upi">
+                        <label for="f-check-in" class="f-label">Departure</label>
+                        <input type="date" name="f-check-in" id="DepartDate1" formControlName="roundTripDeparture" class="f-input f-input__calendar js-datepicker" placeholder="Depart Date">
+                    </div>
+                    <div class="f-input-group__half"formGroupName="upi">
+                        <label for="f-check-out" class="f-label">Return</label>
+                        <input type="date" name="f-check-out" id="roundtripReturnDate" formControlName="roundTripReturn" class="f-input f-input__calendar js-datepicker" placeholder="Return Date">
+                    </div>
+                </div>
+            </div>
+                                            <!-- RoundTrip end -->
+
+                <div class="f-input-group">
+                    <div class="f-input-group__third">
+                        <label for="f-destination" class="f-label">Passangers</label>
+                        <div class="f-select-group">
+                            <div class="f-select-info">Select</div>
+                            <select formControlName="selectAdults"[(ngModel)]="defaultAdults" name="f-adults" id="f-adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+  
+             
+  
+          </div>
+  
+          <button *ngIf="((defaultFlag||rootType) == 1)" type="submit" class="search-btn" [disabled]="!loginForm.valid" (click)="getReturnFlights()">Search Round-Trip</button>
+          <button *ngIf="((defaultFlag||rootType) == 2)" type="submit" class="search-btn" [disabled]="!loginForm.valid" (click)="getSingleFlights()">Search One-Way</button>
+  
+          </form>
+      </div>
+  
+  </div>
+  
+  
+  </div>
+  

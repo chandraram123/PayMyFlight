@@ -1,0 +1,278 @@
+[
+  {
+    "_id": "55291d0c9d29ec9e1f728f4f",
+    "index": 0,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 3831,
+    "singleflight": {
+      "flight": "AI-143",
+      "city": "Delhi",
+      "arrivalTime": "2015-03-04T08:52:14",
+      "departureTime": "2015-02-25T06:35:13"
+    }
+  },
+  {
+    "_id": "55291d0c3d6131a26011ad58",
+    "index": 1,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 6164,
+    "singleflight": {
+      "flight": "AI-202",
+      "city": "Mumbai",
+      "arrivalTime": "2015-03-07T13:12:40",
+      "departureTime": "2015-02-10T10:49:52"
+    }
+  },
+  {
+    "_id": "55291d0c146e9f31e9936e2c",
+    "index": 2,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 3141,
+    "singleflight": {
+      "flight": "AI-202",
+      "city": "Chennai",
+      "arrivalTime": "2015-03-02T01:56:31",
+      "departureTime": "2015-04-08T01:54:43"
+    }
+  },
+  {
+    "_id": "55291d0c860d426193d66ad9",
+    "index": 3,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 8299,
+    "singleflight": {
+      "flight": "6E360",
+      "city": "Hydrabad",
+      "arrivalTime": "2015-01-30T09:07:52",
+      "departureTime": "2015-03-06T00:40:22"
+    }
+  },
+  {
+    "_id": "55291d0c178a1d2f0ab8766d",
+    "index": 4,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 5826,
+    "singleflight": {
+      "flight": "AI-145",
+      "city": "Mumbai",
+      "arrivalTime": "2015-01-28T01:31:30",
+      "departureTime": "2015-03-20T02:18:07"
+    }
+  },
+  {
+    "_id": "55291d0c105fd393df7cdaaa",
+    "index": 5,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 6689,
+    "singleflight": {
+      "flight": "AI-145",
+      "city": "Bangalore",
+      "arrivalTime": "2015-02-14T14:42:06",
+      "departureTime": "2015-02-18T05:22:55"
+    }
+  },
+  {
+    "_id": "55291d0ccd8cc8fd9e359aaf",
+    "index": 6,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 8736,
+    "singleflight": {
+      "flight": "6E360",
+      "city": "Hydrabad",
+      "arrivalTime": "2015-01-19T09:36:46",
+      "departureTime": "2015-01-03T17:01:41"
+    }
+  },
+  {
+    "_id": "55291d0cc553f1f99e77db2f",
+    "index": 7,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 5705,
+    "singleflight": {
+      "flight": "AI-202",
+      "city": "Mumbai",
+      "arrivalTime": "2015-03-01T03:35:59",
+      "departureTime": "2015-02-04T11:19:11"
+    }
+  },
+  {
+    "_id": "55291d0c6e29eac1bdd94f0f",
+    "index": 8,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 2720,
+    "singleflight": {
+      "flight": "AI-143",
+      "city": "Mumbai",
+      "arrivalTime": "2015-02-26T17:25:43",
+      "departureTime": "2015-03-18T15:19:35"
+    }
+  },
+  {
+    "_id": "55291d0c6eb87d1354e45ac1",
+    "index": 9,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 7981,
+    "singleflight": {
+      "flight": "AI-301",
+      "city": "Chennai",
+      "arrivalTime": "2015-02-09T00:45:36",
+      "departureTime": "2015-01-17T09:57:29"
+    }
+  },
+  {
+    "_id": "55291d0cbb6938cfe354dc4e",
+    "index": 10,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 3752,
+    "singleflight": {
+      "flight": "6E360",
+      "city": "Bangalore",
+      "arrivalTime": "2015-02-10T01:15:27",
+      "departureTime": "2015-03-16T22:45:00"
+    }
+  },
+  {
+    "_id": "55291d0cb4d041ebbf7b8da9",
+    "index": 11,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 3073,
+    "singleflight": {
+      "flight": "AI-301",
+      "city": "Bangalore",
+      "arrivalTime": "2015-03-29T16:53:55",
+      "departureTime": "2015-01-03T10:59:54"
+    }
+  },
+  {
+    "_id": "55291d0cd9b1a36ee69f7414",
+    "index": 12,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 5041,
+    "singleflight": {
+      "flight": "GO-565",
+      "city": "Bangalore",
+      "arrivalTime": "2015-01-11T23:02:21",
+      "departureTime": "2015-03-24T10:13:18"
+    }
+  },
+  {
+    "_id": "55291d0c80a2a2a61fc9aae5",
+    "index": 13,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 5362,
+    "singleflight": {
+      "flight": "6E360",
+      "city": "Kolkata",
+      "arrivalTime": "2015-02-14T23:29:40",
+      "departureTime": "2015-01-06T20:14:08"
+    }
+  },
+  {
+    "_id": "55291d0c4e379a0ad628779f",
+    "index": 14,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 4689,
+    "singleflight": {
+      "flight": "AI-145",
+      "city": "Hydrabad",
+      "arrivalTime": "2015-03-16T03:31:58",
+      "departureTime": "2015-03-21T05:43:03"
+    }
+  },
+  {
+    "_id": "55291d0c697a7b8a6f079db2",
+    "index": 15,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 6368,
+    "singleflight": {
+      "flight": "AI-301",
+      "city": "Hydrabad",
+      "arrivalTime": "2015-02-04T22:38:09",
+      "departureTime": "2015-03-12T01:40:55"
+    }
+  },
+  {
+    "_id": "55291d0c087416754d7b3d55",
+    "index": 16,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 7624,
+    "singleflight": {
+      "flight": "AI-202",
+      "city": "Kolkata",
+      "arrivalTime": "2015-01-22T01:20:28",
+      "departureTime": "2015-01-10T09:59:32"
+    }
+  },
+  {
+    "_id": "55291d0c99e5427460ef4295",
+    "index": 17,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 4112,
+    "singleflight": {
+      "flight": "AI-143",
+      "city": "Bangalore",
+      "arrivalTime": "2015-03-19T13:09:08",
+      "departureTime": "2015-03-29T16:40:23"
+    }
+  },
+  {
+    "_id": "55291d0c8bd5172c48f906e7",
+    "index": 18,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 2703,
+    "singleflight": {
+      "flight": "AI-202",
+      "city": "Kolkata",
+      "arrivalTime": "2015-03-02T11:06:26",
+      "departureTime": "2015-02-19T12:15:56"
+    }
+  },
+  {
+    "_id": "55291d0c168bfac3ddc6692c",
+    "index": 19,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 6616,
+    "singleflight": {
+      "flight": "AI-145",
+      "city": "Hydrabad",
+      "arrivalTime": "2015-03-24T07:01:39",
+      "departureTime": "2015-01-09T18:06:28"
+    }
+  },
+  {
+    "_id": "55291d0c73136be120e50085",
+    "index": 20,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 3803,
+    "singleflight": {
+      "flight": "6E360",
+      "city": "Delhi",
+      "arrivalTime": "2015-02-23T15:03:41",
+      "departureTime": "2015-02-23T01:43:59"
+    }
+  },
+  {
+    "_id": "55291d0c37f92889aa795201",
+    "index": 21,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 8464,
+    "singleflight": {
+      "flight": "AI-143",
+      "city": "Mumbai",
+      "arrivalTime": "2015-03-02T09:50:23",
+      "departureTime": "2015-03-11T23:19:19"
+    }
+  },
+  {
+    "_id": "55291d0c72e0d56524955b6e",
+    "index": 22,
+    "picture": "images/i/blue/flight2.jpg",
+    "price": 7940,
+    "singleflight": {
+      "flight": "AI-202",
+      "city": "Mumbai",
+      "arrivalTime": "2015-02-09T23:05:08",
+      "departureTime": "2015-02-17T12:59:59"
+    }
+  }
+]

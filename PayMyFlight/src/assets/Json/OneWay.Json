@@ -1,0 +1,362 @@
+
+{
+  "Data": {
+    "ConversationId": "string",
+    "Errors": [],
+    "PricedItineraries": [
+      {
+        "AirItineraryPricingInfo": {
+          "DivideInPartyIndicator": false,
+          "FareInfos": [
+            {
+              "FareReference": "K"
+            }
+          ],
+          "FareSourceCode": "UjlvaGZHYll2dUJyYlZHbWxXbjJzZTl3R3IxS2FnVDZqRjRLNHU3Y1VwOFVXVGprdmZUUnJieExNTkgrMy9iaUJhYnpnaURrbUpSbFUxNWRQUTZUdDFrVGFMQXhFR1I3Z3VGaE1DS0lmdXFteFY2MFBTQjlYRmV6WVBySTZGVmk0R2VLRDlnRXFCOTU2bGRUSkJPSXRBPT0=",
+          "FareType": "Public",
+          "IsRefundable": "Yes",
+          "ItinTotalFare": {
+            "BaseFare": {
+              "Amount": "1010.71",
+              "CurrencyCode": "AED",
+              "DecimalPlaces": 2
+            },
+            "EquivFare": {
+              "Amount": "275.13",
+              "CurrencyCode": "USD",
+              "DecimalPlaces": 2
+            },
+            "TotalFare": {
+              "Amount": "322.96",
+              "CurrencyCode": "USD",
+              "DecimalPlaces": 2
+            },
+            "TotalTax": {
+              "Amount": "47.83",
+              "CurrencyCode": "USD",
+              "DecimalPlaces": 2
+            }
+          },
+          "PTC_FareBreakdowns": [
+            {
+              "BaggageInfo": [
+                "30KG"
+              ],
+              "CabinBaggageInfo": [
+                "SB"
+              ],
+              "FareBasisCodes": [
+                "KKSOSAE1"
+              ],
+              "PassengerFare": {
+                "BaseFare": {
+                  "Amount": "1010.71",
+                  "CurrencyCode": "AED",
+                  "DecimalPlaces": 2
+                },
+                "EquivFare": {
+                  "Amount": "275.13",
+                  "CurrencyCode": "USD",
+                  "DecimalPlaces": 2
+                },
+                "Surcharges": [],
+                "Taxes": [
+                  {
+                    "Amount": "15.04",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "YQF"
+                  },
+                  {
+                    "Amount": "20.47",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "AE4"
+                  },
+                  {
+                    "Amount": "9.54",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "F62"
+                  },
+                  {
+                    "Amount": "1.39",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "TP"
+                  },
+                  {
+                    "Amount": "1.39",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "ZR2"
+                  }
+                ],
+                "TotalFare": {
+                  "Amount": "322.96",
+                  "CurrencyCode": "USD",
+                  "DecimalPlaces": 2
+                }
+              },
+              "PassengerTypeQuantity": {
+                "Code": "ADT",
+                "Quantity": 1
+              },
+              "PenaltiesInfo": [
+                {
+                  "Allowed": true,
+                  "Amount": "75",
+                  "CurrencyCode": "SGD",
+                  "PenaltyType": "Cancel"
+                },
+                {
+                  "Allowed": true,
+                  "Amount": "0",
+                  "CurrencyCode": "SGD",
+                  "PenaltyType": "Exchange"
+                }
+              ]
+            }
+          ],
+          "SplitItinerary": "false"
+        },
+        "DirectionInd": "OneWay",
+        "IsPassportMandatory": true,
+        "OriginDestinationOptions": [
+          {
+            "FlightSegments": [
+              {
+                "ArrivalAirportLocationCode": "BLR",
+                "ArrivalDateTime": "2021-11-26T08:50:00",
+                "CabinClassCode": "Y",
+                "CabinClassText": "ECO FLEX",
+                "DepartureAirportLocationCode": "DXB",
+                "DepartureDateTime": "2021-11-26T03:40:00",
+                "Eticket": true,
+                "FlightNumber": "564",
+                "JourneyDuration": 220,
+                "MarketingAirlineCode": "EK",
+                "MarriageGroup": "",
+                "MealCode": "M",
+                "OperatingAirline": {
+                  "Code": "EK",
+                  "Equipment": "77W",
+                  "FlightNumber": "564"
+                },
+                "ResBookDesigCode": "K",
+                "ResBookDesigText": "ECO FLEX",
+                "SeatsRemaining": {
+                  "BelowMinimum": false,
+                  "Number": 7
+                },
+                "StopQuantity": 0,
+                "StopQuantityInfo": {
+                  "ArrivalDateTime": "0001-01-01T00:00:00",
+                  "DepartureDateTime": "0001-01-01T00:00:00",
+                  "Duration": 0,
+                  "LocationCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "PaxNameCharacterLimit": 60,
+        "Provider": "MYSTIFLY",
+        "RequiredFieldsToBook": [
+          "Passport",
+          "Passport No",
+          "DOB",
+          "PassengerNationality",
+          "PostCode",
+          "Gender",
+          "Email",
+          "IssueCountry",
+          "ExpiredOn",
+          "Title",
+          "ContactNumber"
+        ],
+        "SequenceNumber": 1,
+        "TicketType": "eTicket",
+        "ValidatingAirlineCode": "EK"
+      },
+      {
+        "AirItineraryPricingInfo": {
+          "DivideInPartyIndicator": false,
+          "FareInfos": [
+            {
+              "FareReference": "K"
+            }
+          ],
+          "FareSourceCode": "ZmtlR1lGcThJQm5YS2orOEFaMitLb09qQncrQUViREEwd3hlaTNiaHJBS2J3MHlTNDg5Ym0ycFpnRVI0OU5ZTTY3RU1xeXFTdFYySTJFbW9LSU0wM1dwM2Z4dnFCbEtFT0daTW9XdDdRV2NBNzEzSzJRQ0pacnM0U1RsTVRzUGhaSHgwQkFUOEdzOXdaVTV3K2NqTmZRPT0=",
+          "FareType": "Public",
+          "IsRefundable": "Yes",
+          "ItinTotalFare": {
+            "BaseFare": {
+              "Amount": "1010.71",
+              "CurrencyCode": "AED",
+              "DecimalPlaces": 2
+            },
+            "EquivFare": {
+              "Amount": "275.13",
+              "CurrencyCode": "USD",
+              "DecimalPlaces": 2
+            },
+            "TotalFare": {
+              "Amount": "322.96",
+              "CurrencyCode": "USD",
+              "DecimalPlaces": 2
+            },
+            "TotalTax": {
+              "Amount": "47.83",
+              "CurrencyCode": "USD",
+              "DecimalPlaces": 2
+            }
+          },
+          "PTC_FareBreakdowns": [
+            {
+              "BaggageInfo": [
+                "30KG"
+              ],
+              "CabinBaggageInfo": [
+                "SB"
+              ],
+              "FareBasisCodes": [
+                "KKSOSAE1"
+              ],
+              "PassengerFare": {
+                "BaseFare": {
+                  "Amount": "1010.71",
+                  "CurrencyCode": "AED",
+                  "DecimalPlaces": 2
+                },
+                "EquivFare": {
+                  "Amount": "275.13",
+                  "CurrencyCode": "USD",
+                  "DecimalPlaces": 2
+                },
+                "Surcharges": [],
+                "Taxes": [
+                  {
+                    "Amount": "15.04",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "YQF"
+                  },
+                  {
+                    "Amount": "20.47",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "AE4"
+                  },
+                  {
+                    "Amount": "9.54",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "F62"
+                  },
+                  {
+                    "Amount": "1.39",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "TP"
+                  },
+                  {
+                    "Amount": "1.39",
+                    "CurrencyCode": "USD",
+                    "DecimalPlaces": 2,
+                    "TaxCode": "ZR2"
+                  }
+                ],
+                "TotalFare": {
+                  "Amount": "322.96",
+                  "CurrencyCode": "USD",
+                  "DecimalPlaces": 2
+                }
+              },
+              "PassengerTypeQuantity": {
+                "Code": "ADT",
+                "Quantity": 1
+              },
+              "PenaltiesInfo": [
+                {
+                  "Allowed": true,
+                  "Amount": "75",
+                  "CurrencyCode": "SGD",
+                  "PenaltyType": "Cancel"
+                },
+                {
+                  "Allowed": true,
+                  "Amount": "0",
+                  "CurrencyCode": "SGD",
+                  "PenaltyType": "Exchange"
+                }
+              ]
+            }
+          ],
+          "SplitItinerary": "false"
+        },
+        "DirectionInd": "OneWay",
+        "IsPassportMandatory": true,
+        "OriginDestinationOptions": [
+          {
+            "FlightSegments": [
+              {
+                "ArrivalAirportLocationCode": "BLR",
+                "ArrivalDateTime": "2021-11-27T02:55:00",
+                "CabinClassCode": "Y",
+                "CabinClassText": "ECO FLEX",
+                "DepartureAirportLocationCode": "DXB",
+                "DepartureDateTime": "2021-11-26T21:50:00",
+                "Eticket": true,
+                "FlightNumber": "568",
+                "JourneyDuration": 215,
+                "MarketingAirlineCode": "EK",
+                "MarriageGroup": "",
+                "MealCode": "M",
+                "OperatingAirline": {
+                  "Code": "EK",
+                  "Equipment": "77W",
+                  "FlightNumber": "568"
+                },
+                "ResBookDesigCode": "K",
+                "ResBookDesigText": "ECO FLEX",
+                "SeatsRemaining": {
+                  "BelowMinimum": false,
+                  "Number": 7
+                },
+                "StopQuantity": 0,
+                "StopQuantityInfo": {
+                  "ArrivalDateTime": "0001-01-01T00:00:00",
+                  "DepartureDateTime": "0001-01-01T00:00:00",
+                  "Duration": 0,
+                  "LocationCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "PaxNameCharacterLimit": 60,
+        "Provider": "MYSTIFLY",
+        "RequiredFieldsToBook": [
+          "Passport",
+          "Passport No",
+          "DOB",
+          "PassengerNationality",
+          "PostCode",
+          "Gender",
+          "Email",
+          "IssueCountry",
+          "ExpiredOn",
+          "Title",
+          "ContactNumber"
+        ],
+        "SequenceNumber": 2,
+        "TicketType": "eTicket",
+        "ValidatingAirlineCode": "EK"
+      }
+    ],
+    "Success": true,
+    "Target": "Test"
+  },
+  "Success": true
+}
