@@ -71,8 +71,7 @@ export class FlightList implements OnInit {
 
   ngOnInit() {
 
-    
-
+ 
     // if(LocalStorageService.isLoggedIn()){
     //   this.queryUserProfileData = LocalStorageService.getUserData();
     // }
