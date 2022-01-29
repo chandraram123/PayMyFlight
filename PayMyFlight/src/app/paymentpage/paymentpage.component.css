@@ -1,0 +1,487 @@
+
+.card
+{  background-color: #1D3445;
+    color: #f7fff7;
+    font-style: italic;
+    font-family: "exo_2light_italic";
+    /*box-shadow: 2px 2px 50px black ;*/
+    margin-top: 20px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 2px black;
+    font-style: normal;
+}
+
+.btn
+{
+    background-color: #fdc921;
+    font-size: 16px;
+    font-family: "exo_2light_italic";
+    text-align: center;
+    font-weight: 700;
+    border-style: none;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11);
+}
+.form-control
+
+{
+    
+    background-color: white;
+}
+
+
+.form-control:hover
+{
+    border: 3px solid #fdc921;
+}
+
+.btn:hover{
+    background-color: #FF0035;
+}
+.tab-pane
+{
+    background-color: #1D3445;
+    border-radius: 3px;
+   /* box-shadow: 2px 2px 2px black;*/
+}
+
+#amount
+{
+    color: tomato;
+    font-weight: bold;
+}
+.box
+{
+    border: 1px solid black;
+    padding: 1px 2px;
+    border-radius: 3px;
+    background-color: #f1faee;
+    
+}
+.nav-link{
+    background-color: #ffc300;
+    color: white;
+    
+    border-radius: 3px;
+    text-align:center;
+    border: 1px solid black;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11);
+
+    
+}
+.makepaymentbtn:hover
+{
+    background-color: #38b000;
+}
+#cardlogo
+{
+    width: 65px;
+    height: 30px;
+}
+.nav-link:hover
+{
+    background-color: #FF0035;
+}
+.nav-link:active
+{
+    background-color: #FF0035;
+}
+
+.nav-link:focus
+{
+    background-color:#FF0035 ;
+}
+
+                                                                                /* for very-small devices*/
+@media screen and (min-width:315px)
+{
+    .flex-column{
+        height: 760px;
+        width: 135px;
+        
+    }
+   .nav-link{
+       width: 95px;
+       height: 150px;
+       margin-top: 1px;
+    
+      
+   }
+   .tab-pane{
+       height: 760px;
+       padding-right: 3px;
+       padding-left: 2px;
+       margin-left: -12px;
+       padding-top: 2px;
+       margin-right: -5px;
+   }
+   .card
+    {
+        font-size: 14px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    #creditcardno
+{
+    margin-left:0px;
+    width:150px;
+}
+#debitcardno
+{
+    margin-left:0px;
+    width:150px;
+}
+   #yeardropdownButton
+   {
+       margin-left: 6px;
+   }
+   .form-control
+{
+    font-size: 14px;
+   
+}
+
+.dropdown-menu
+{
+    font-size: 14px;
+}
+.dropdown-toggle
+{
+    font-size: 14px;
+}
+#amount
+{
+    padding-top: 2px;
+    margin-left: 15px;
+}
+#amttxt
+{
+    margin-left: 15px;
+}
+
+.makepaymentbtn
+{
+    margin-left: 5px;
+}
+
+}
+
+@media screen and (min-width:340px) {
+ 
+.nav-link
+ {
+    width: 100px;
+ }
+.tab-pane
+ {
+    padding: 5px;
+ }
+ #yeardropdownButton
+ {
+  margin-left: 12px;
+ }
+
+.dropdown-menu
+{
+    font-size: 10px;
+    width: 10px;
+}
+#logo2
+{
+    margin-left: 2px;
+}  
+.form-control
+{
+    font-size: 10px;
+} 
+}
+
+@media screen and (min-width:350px) {
+    .tab-pane{
+        height: 700px;
+    }
+    .flex-column
+    {
+        height: 700px;
+        
+    }
+   
+    
+}
+
+
+@media screen and (min-width:415px){
+    .nav-link{
+        width: 100px;
+        
+    }
+    .tab-pane
+    {
+        padding-right: 8px;
+        padding-left: 10px;
+        height: 644px;
+    }
+    .flex-column
+    {
+        height: 648px;
+    }
+   
+    #yeardropdownButton
+    {
+        margin-left: 25px;
+    
+    }
+    
+    .form-control
+    {
+        font-size: 12px;
+        
+    }
+    #creditcardno
+    {
+        
+        width:210px;
+    }
+    #debitcardno
+    {
+       
+        width:210px;
+    }
+
+  
+    
+
+}
+
+@media screen and (min-width:500px) {
+    .tab-pane{
+        height: 610px;
+    }
+    .flex-column
+    {
+        height: 610px;
+    }
+    .nav-link
+    {
+        width: 125px;
+    }
+    #yeardropdownButton
+    {
+        margin-left: 45px;
+    
+    }
+
+}
+
+
+                                                                                        /*SmallDevice*/
+@media screen and (min-width:576px) {
+   .tab-pane
+   {
+   height: 572px;
+
+   }
+   .flex-column{
+       height: 576px;
+   }
+    #yeardropdownButton
+    {
+        margin-left: 4px;
+    }
+    
+    .nav-link
+    {
+        width: 125px;
+        height:142px;
+
+    }
+    #creditcardno
+    {
+        margin-left:-7px;
+        width: 185px;
+    }
+    #logo1
+    {
+        margin-left: 35px;
+    }
+    #debitcardno
+    {
+        margin-left:-7px;
+        width: 185px;
+    }
+    .dropdown-menu
+    {
+        font-size: 12px;
+    }
+  .cardlogo
+  {
+     margin-left: 10px;
+  }
+  
+  
+  
+}
+
+
+                                                                                /* for Medium devices*/
+
+
+@media screen and (min-width:768px) {
+    .flex-column
+{
+   width: auto;
+    height: 500px;
+}
+.tab-pane
+{
+    height: 500px;
+}
+.nav-link
+{
+
+    width: 150px;
+    height: 124px;
+    
+}
+.card
+{
+        font-size: 16px;
+    }
+.form-control
+{
+    font-size: 16px;
+
+    
+}
+.dropdown-menu
+{
+    font-size: 14px;
+    
+}
+.dropdown-toggle
+{
+    font-size:16px;
+}
+#monthdropdownButton
+{
+    margin-left: -35px;
+}
+
+ #yeardropdownButton
+{
+    margin-left: 25px;
+
+}
+
+#logo1
+{
+    margin-left: 40px;
+}
+#logo2
+{
+    margin-left: 0px;
+
+}
+#logo3
+{margin-left: 40px;
+  }  
+  #logo4
+    {
+        margin-left: 0px;
+    }
+
+#creditcardno
+    {
+        margin-left:-35px;
+        width: 250px;
+    }
+    #crcardname
+    {
+        width:250px;
+    }
+    #debitcardno
+    {
+        margin-left:-35px;
+        width: 250px;
+    }
+    #dcardname
+    {
+        width: 250px;
+    }
+
+
+.box{
+
+    margin: 5px;
+}
+
+
+   
+}
+
+                                                                                    /* for Large devices*/
+@media screen and (min-width:992px)
+{
+    .flex-column
+    {
+        height: 556px;
+        width: auto;
+    }
+    .tab-pane{
+        height: 556px;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .nav-link
+{
+
+    width: 200px;
+    height: 115px;
+   
+}
+#creditcardno
+{
+    margin-left:-5px;
+    width: 250px;
+}
+#crcardname
+{
+    width: 250px;
+}
+
+#debitcardno
+{
+    margin-left:-5px;
+    width: 250px;
+}
+#dcardname
+{
+    width: 250px;
+}
+#monthdropdownButton
+{
+    margin-left: 0px;
+}
+
+#yeardropdownButton
+{
+    margin-left: 30px;
+
+}
+.cardlogo
+{
+    margin-left:35px;
+}
+#logo2
+{
+    margin-left: 40px;
+}
+#logo4
+{
+    margin-left: 40px;
+}
+
+}
+
