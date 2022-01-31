@@ -1,0 +1,461 @@
+.card{
+    border-radius: 5px;
+    background-color: #1D3445;
+    box-shadow: black 2px 2px 20px;
+    font-family: "exo_2light_italic";
+}
+.btn{
+    background-color: #fdc921;
+    font-family: "exo_2light_italic";
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    border-style: none;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11);
+}
+.btn:hover{
+    background-color: #FF0035;
+}
+
+#duration
+{
+    margin-top: 5px;
+}
+#refundablebadge
+{
+    margin-top: 5px;
+}
+#newbadge
+{
+    margin-left: 2px;
+}
+.accordion-body
+{
+    background-color: #1D3445;
+    color: #e5e5e5;
+    font-weight:  400;
+}
+.accordion-button
+{
+    background-color: #fdc921;
+    color:black ; 
+    font-style: italic; 
+}
+.box{
+    border:2px solid black;
+    width:fit-content
+}
+
+.bi-diagram-3-fill
+{
+    margin-right: 12px;
+}
+.continue
+{
+    font-style: italic;
+    font-weight: 200;
+}
+#skipbtn
+{
+    font-weight: 200;
+    background-color: #ff4800;
+}
+#skipbtn:hover
+{
+    background-color: #06d6a0;
+    color: black;
+}
+
+
+
+                                                                    /*extrasmall*/
+
+@media screen and (min-width:290px){
+    #day
+    {
+        margin-left: 15px;
+    }
+    .weight
+    {
+        margin-left:50px;
+    }
+    #cabin-weight
+    {
+        margin-top: 45px;
+    }
+    #date
+    {
+        margin-left: 15px;
+    }
+    #duration
+    {
+        margin-left: 5px;
+    }
+    .card{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    h6{
+        font-size: 18px;
+    }
+    .form-control{
+        font-size: 14px;
+    }
+    .sm{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+   
+    #couponcode
+    {
+        width: 185px;
+    }
+    #ccode
+    {
+        font-size: 14px;
+    }
+  
+    #mobilenumberinput
+    {
+     margin-left: 35px;
+    }
+    .meals
+    {
+        width: 80px;
+    }
+    .laggage
+    {
+        width: 80px;
+    }
+    #skipbtn
+    {
+        margin-left: 65px;
+    }
+    #gender
+    {
+        margin-left: -20px;
+    }
+
+    
+}
+@media screen and (min-width:300px) {
+    #cabin-weight
+    {
+        margin-top: 35px;
+    }
+    .weight{
+        margin-left: 80px;
+    }
+   
+}
+
+@media screen and (min-width:350px) {
+    
+    .weight
+    {
+        margin-left:85px;
+    }
+    #couponcode
+    {
+        width: 250px;
+    }
+    .flipkartcode
+    {
+        width: 250px;
+    }
+    #mobilenumberinput
+    {
+        width:180px;
+    }
+    
+}
+@media screen and (min-width:388px) {
+    #cabin-weight
+    {
+        margin-top: 15px;
+    }
+    .weight{
+        margin-left: 100px;
+    }
+    #mobilenumberinput
+    {
+        width:210px;
+    }
+    .form-check
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .weight{
+        margin-left: 110px;
+    }
+    #couponcode
+    {
+        width: 290px;
+    }
+    .flipkartcode
+    {
+        width: 290px;
+    }
+    #mobilenumberinput
+    {
+        width:225px;
+    }
+    .meals
+    {
+        width: 100px;
+    }
+    .laggage
+    {
+        width: 110px;
+    }
+    
+}
+@media screen and (min-width:430px) {
+    .weight{
+        margin-left: 120px;
+    }
+}
+
+@media screen and (min-width:434px) {
+    #cabin-weight
+    {
+        margin-top: 0px;
+    }
+    
+}
+
+
+@media screen and (min-width:500px) {
+    .weight{
+        margin-left: 135px;
+    }
+    .meals{
+        width: 130px;
+    }
+    .laggage
+    {
+        width: 130px;
+    }
+ #mobilenumberinput
+    {
+        width:230px;
+    }
+    #emailid
+    {
+        width: 300px;
+    }
+    
+}
+@media screen and (min-width:565px) {
+    .weight{
+        margin-left: 165px;
+    }
+    #newbadge
+    {
+        margin-left: 5px;
+    }
+    .info{
+        margin-left:5px;
+    }
+    
+   
+    
+}
+ 
+
+@media screen and (min-width:575px) {
+ 
+    
+    #mobilenumberinput
+    {
+     margin-left: 30px;
+    }
+    
+}
+                                                                                        /*Small*/
+@media screen and (min-width:576px) {
+    .accordion-body{
+        font-size: 20px;
+    }
+    .sm
+    {
+        font-size: 12px;
+    }
+    .weight
+    {
+        margin-left: 0px;
+    }
+    #cabin-weight
+    {
+        margin-top: 40px;
+    }
+    #cabin-baggage
+    {
+        margin-top: 20px;
+    }
+    h6
+    {
+        font-size: 20px;
+    }
+    .form-control{
+        font-size: 18px;
+    }
+    #couponcode
+    {
+        width: 355px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    #applybtn1
+    {
+        margin-left: 55px;
+    }
+    #ccode{
+        font-size: 18px;
+    }
+    .flipkartcode
+    {
+        width: 355px;
+    }
+    #applybtn2{
+        margin-left:55px;
+    }
+    
+    #mobilenumberinput
+    {
+        margin-left: 45px;
+        width: 265px;
+    }
+    #emailid
+    {
+        width: 350px;
+    }
+.form-check{
+    font-size: 17px;
+
+}
+#firstname
+{
+    width: 150px;
+}
+#lastname
+{
+    width: 160px;
+    margin-left: 10px;
+}
+#gender
+{
+    margin-left: 30px;
+}
+    #duration
+    {
+        margin-left: 35px;
+    }
+    #newbadge
+    {
+        margin-left: 5px;
+    }
+    .info{
+        margin-left: 5px;
+    }
+    .meals{
+        width: 100px;
+        font-size: 18px;
+    }
+    .laggage{
+        width: 100px;
+        font-size: 17px;
+    }
+}
+
+                                                                                            /*Medium*/
+@media screen and (min-width:768px) {
+    .sm
+    {
+        font-size: 12px;
+    }
+    #mobilenumberinput
+    {
+        margin-left: 10px;
+    }
+    .input-group-text
+    {
+        font-size: 12px;
+    }
+    #newbadge
+    {
+        margin-left: 5px;
+    }
+    .info{
+        margin-left: 5px;
+    }
+   
+    #cabin-baggage
+    {
+        margin-top: 40px;
+    }
+    #cabin-weight
+    {
+        margin-top: 58px;
+    }
+    .meals{
+        width: 140px;
+    }
+    .laggage
+    {
+        width: 140px;
+    }
+    #mobilenumberinput
+    {
+        margin-left: 30px;
+    }
+    #firstname
+    {
+        width: 210px;
+    }
+    #lastname
+    {
+        width: 210px;
+    }
+    #gender
+    {
+        margin-left: 25px;
+    }
+}
+                                                                                    /*Large*/
+@media screen and (min-width:992px) {
+    .meals{
+        width: 150px;
+    }
+    .laggage
+    {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #cabin-weight
+    {
+        margin-top: 40px;
+    }
+    .flipkartcode
+    {
+        width: 400px;
+    }
+    #couponcode
+    {
+        width: 400px;
+    }
+    
+}
+
+
+
+

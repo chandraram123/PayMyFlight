@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { TokenInterceptor } from './core/service/TokenInterceptor';
 import { FlightList } from './flightList/flightList';
 import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+import { ItinerarypageComponent } from './itinerarypage/itinerarypage.component';
 
 
 
@@ -18,7 +19,8 @@ import { PaymentpageComponent } from './paymentpage/paymentpage.component';
     AppComponent,
     FlightList,
     HomeComponent,
-    PaymentpageComponent
+    PaymentpageComponent,
+    ItinerarypageComponent
   ],
   imports: [
     BrowserModule,
