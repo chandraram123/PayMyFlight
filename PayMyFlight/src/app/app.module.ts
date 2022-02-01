@@ -9,6 +9,8 @@ import { AuthGuardService } from './core/service/auth-gaurd.service';
 import { HomeComponent } from './home/home.component';
 import { TokenInterceptor } from './core/service/TokenInterceptor';
 import { FlightList } from './flightList/flightList';
+import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+import { ItinerarypageComponent } from './itinerarypage/itinerarypage.component';
 
 
 
@@ -16,7 +18,9 @@ import { FlightList } from './flightList/flightList';
   declarations: [
     AppComponent,
     FlightList,
-    HomeComponent
+    HomeComponent,
+    PaymentpageComponent,
+    ItinerarypageComponent
   ],
   imports: [
     BrowserModule,

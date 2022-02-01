@@ -1,0 +1,560 @@
+
+.card
+{  background-color: #1D3445;
+    color: #f7fff7;
+    font-style: italic;
+    font-family: "exo_2light_italic";
+    /*box-shadow: 2px 2px 50px black ;*/
+    margin-top: 20px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 2px black;
+    font-style: normal;
+}
+
+.btn
+{
+    background-color: #fdc921;
+    font-size: 16px;
+    font-family: "exo_2light_italic";
+    text-align: center;
+    font-weight: 900;
+    border-style: none;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11);
+}
+.form-control
+
+{
+    
+    background-color: white;
+}
+
+
+.form-control:hover
+{
+    border: 3px solid #fdc921;
+}
+
+.btn:hover{
+    background-color: #FF0035;
+}
+.tab-pane
+{
+    background-color: #1D3445;
+    border-radius: 3px;
+   /* box-shadow: 2px 2px 2px black;*/
+}
+
+.amount
+{
+    color: tomato;
+    font-weight: bold;
+}
+.box
+{
+    border: 1px solid black;
+    padding: 1px 2px;
+    border-radius: 3px;
+    background-color: #f1faee;
+    
+}
+.nav-link{
+    background-color: #ffc300;
+    color: white;
+    border-radius: 3px;
+    text-align:center;
+    border: 1px solid black;
+    font-weight: 500;
+    font-style: italic;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11);
+
+    
+}
+.makepaymentbtn:hover
+{
+    background-color: #38b000;
+}
+#cardlogo
+{
+    width: 65px;
+    height: 30px;
+}
+.nav-link:hover
+{
+    background-color: #FF0035;
+}
+.nav-link:active
+{
+    background-color: #FF0035;
+}
+
+.nav-link:focus
+{
+    background-color:#FF0035 ;
+}
+
+                                                                                /* for very-small devices*/
+@media screen and (min-width:315px)
+{
+    .flex-column{
+        height: auto;
+        width: auto;
+        
+    }
+   .nav-link{
+       width: 95px;
+       height: 150px;
+       margin-top: 1px;
+    
+      
+   }
+   .tab-pane{
+       height: 760px;
+       padding-right: 3px;
+       padding-left: 2px;
+       margin-left: -12px;
+       padding-top: 2px;
+       margin-right: -5px;
+   }
+   .card
+    {
+        font-size: 14px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        letter-spacing: 1px;
+    }
+    #creditcardno
+{
+    margin-left:0px;
+    width:150px;
+}
+#debitcardno
+{
+    margin-left:0px;
+    width:150px;
+}
+   .yeardropdownButton
+   {
+       margin-left: 6px;
+   }
+   .form-control
+{
+    font-size: 14px;
+   
+}
+
+.dropdown-menu
+{
+    font-size: 14px;
+}
+.dropdown-toggle
+{
+    font-size: 14px;
+}
+#amount
+{
+    padding-top: 2px;
+    margin-left: 15px;
+}
+.amttxt
+{
+    margin-left: 15px;
+}
+
+.makepaymentbtn
+{ font-weight: 400;
+    margin-left: 5px;
+    font-style: italic;
+}
+#creditcvv
+{
+    width: 55px;
+}
+#debitcvv
+{
+    width: 55px;
+}
+.amount
+{
+    font-size: 20px;
+}
+
+
+
+
+}
+
+@media screen and (min-width:340px) {
+ 
+.nav-link
+ {
+    width: 100px;
+ }
+.tab-pane
+ {
+    padding: 5px;
+ }
+ .yeardropdownButton
+ {
+  margin-left: 12px;
+ }
+
+.dropdown-menu
+{
+    font-size: 10px;
+    width: 10px;
+}
+
+ 
+
+}
+
+@media screen and (min-width:350px) {
+    .tab-pane{
+        height: 700px;
+    }
+    
+   
+    
+}
+@media screen {
+    
+}
+
+
+@media screen and (min-width:415px){
+    .nav-link{
+        width: 100px;
+        
+    }
+    .tab-pane
+    {
+        padding-right: 8px;
+        padding-left: 10px;
+        height: 644px;
+    }
+    
+   
+    .yeardropdownButton
+    {
+        margin-left: 25px;
+    
+    }
+    
+    
+    #creditcardno
+    {
+        
+        width:210px;
+    }
+    #debitcardno
+    {
+       
+        width:210px;
+    }
+
+  
+    
+
+}
+
+@media screen and (min-width:500px) {
+    .tab-pane{
+        height: 610px;
+    }
+    
+    .nav-link
+    {
+        width: 125px;
+    }
+    .yeardropdownButton
+    {
+        margin-left: 45px;
+    
+    }
+
+}
+
+
+                                                                                        /*SmallDevice*/
+@media screen and (min-width:576px) {
+    .card{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .form-control
+    {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+   .tab-pane
+   {
+   height: 572px;
+
+   }
+   
+   .monthdropdownButton
+   {
+       margin-left: -10px;
+   }
+    .yeardropdownButton
+    {
+        margin-left: 14px;
+    }
+    
+    .nav-link
+    {
+        width: 125px;
+        height:130px;
+
+    }
+    #creditcardno
+    {
+        margin-left:-10px;
+        width: 170px;
+    }
+    #logo1
+    {
+        margin-left: 15px;
+    }
+    #logo3
+    {
+        margin-left: 15px;
+    }
+    #debitcardno
+    {
+        margin-left:-10px;
+        width: 170px;
+    }
+    .dropdown-menu
+    {
+        font-size: 12px;
+    }
+  
+  #crcardname
+  {
+      margin-left: -10px;
+      width: 170px;
+
+  }
+  #dcardname
+  {
+      margin-left: -10px;
+      width: 170px;
+  }
+
+#creditcvv
+{
+    margin-left: -10px;
+}
+#debitcvv
+{
+    margin-left: -10px;
+}
+
+  .makepaymentbtn
+  {
+      font-size: 18px;
+  }
+  .amount
+  {
+      font-size: 24px;
+  }
+  
+  
+}
+
+
+                                                                                /* for Medium devices*/
+
+
+@media screen and (min-width:768px) {
+
+.tab-pane
+{
+    height: 520px;
+}
+.nav-link
+{
+
+    width: 150px;
+    height: 130px;
+    font-size: 18px;
+    
+}
+
+.dropdown-menu
+{
+    font-size: 14px;
+    
+}
+.dropdown-toggle
+{
+    font-size:16px;
+}
+.monthdropdownButton
+{
+    margin-left: -35px;
+   
+}
+
+ .yeardropdownButton
+{
+    margin-left: 25px;
+
+}
+
+#logo1
+{
+    margin-left: 15px;
+}
+
+#logo3
+{ margin-left: 15px;
+  }  
+  
+
+#creditcardno
+    {
+        margin-left:-35px;
+        width: 250px;
+    }
+    #crcardname
+    {
+        width:250px;
+        margin-left: 5px;
+    }
+    #debitcardno
+    {
+        margin-left:-35px;
+        width: 250px;
+    }
+    #dcardname
+    {
+        width: 250px;
+        margin-left: 5px;
+    }
+    #debitcvv
+    {
+        margin-left: 5px;
+    }
+    #creditcvv
+    {
+        margin-left:5px;
+    }
+
+
+.box{
+
+    margin: 5px;
+}
+ .card{
+     font-size: 20px;
+     letter-spacing: 1px;
+ }
+
+    .form-control
+    {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .makepaymentbtn
+    {
+        font-size: 20px;
+    }
+   
+
+
+   
+}
+
+                                                                                    /* for Large devices*/
+@media screen and (min-width:992px)
+{
+    
+    
+    .tab-pane{
+        height: 570px;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .nav-link
+{
+
+    width: 200px;
+    height: 140px;
+   
+}
+#creditcardno
+{
+  margin-left: 5px;
+    width: 250px;
+}
+#crcardname
+{
+    width: 250px;
+}
+
+#debitcardno
+{
+    margin-left: 5px;
+    width: 250px;
+}
+#dcardname
+{
+    width: 250px;
+}
+.monthdropdownButton
+{
+    margin-left: 5px;
+}
+
+.yeardropdownButton
+{
+    margin-left: 40px;
+
+}
+#logo1
+{
+    margin-left:45px;
+}
+#logo3
+{
+    margin-left: 45px;
+}
+
+
+
+}
+
+@media screen and (min-width:1200px)
+{ 
+    #creditcardno
+    {
+        width: 300px;
+    }
+    #crcardname
+    {
+    width: 300px;
+    }
+
+    #debitcardno
+    {
+        width:300px;
+    }
+    #dcardname
+    {
+        width: 300px;
+    }
+    #yeardropdown
+    {
+        margin-left: 60px;
+    }
+    .makepaymentbtn
+    {
+        font-size: 20px;
+        
+    }
+}
+

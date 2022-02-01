@@ -1,0 +1,413 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 ">
+        <div class="card ">
+          <div class="card-body">
+            <div class="d-flex align-items-start">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active " id="v-pills-credit-tab" data-bs-toggle="pill" data-bs-target="#v-pills-creditcard" type="button" role="tab" aria-controls="v-pills-creditcard" aria-selected="true">CREDIT CARD</button>
+      
+            <button class="nav-link " id="v-pills-debitcard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-debitcard" type="button" role="tab" aria-controls="v-pills-debitcard" aria-selected="false">DEBIT CARD</button>
+      
+            <button class="nav-link" id="v-pills-netbanking-tab" data-bs-toggle="pill" data-bs-target="#v-pills-netbanking" type="button" role="tab" aria-controls="v-pills-netbanking" aria-selected="false">NET BANKING</button>
+      
+            <button class="nav-link" id="v-pills-upi-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upi" type="button" role="tab" aria-controls="v-pills-upi" aria-selected="false">UPI</button>
+              </div>
+
+              <div class="tab-content" id="v-pills-tabContent">
+                 <!--CreditcardDetails-->
+                <div class="tab-pane fade show active" id="v-pills-creditcard" role="tabpanel" aria-labelledby="v-pills-creditcard-tab">Enter your Credit Card Details
+                 
+                  <form action="#">
+                    <div class="row mt-2">
+                    <div class=" col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3">
+                    <label  for="creditcardno">Card Number:</label>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-lg-5 col-11">
+                    <input type="text" class="form-control" id="creditcardno" placeholder="Credit card No">
+                    </div>
+                    <div class="col-md-2 col-sm-2 mt-1 col-lg-3">
+                    <img src="..\assets\images\banklogos\mc1.png" alt="LOGO" class="img-fluid cardlogo" width="40" height="5" id="logo1">
+                    </div>
+                  </div>
+                                                                                  <!--Expiry Date-->
+                    <div class="row mt-1">
+                    <div class="col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3 mt-1">
+                      <label>Expiry Date :</label>
+                    </div>
+                    <div class="dropdown col-12 col-sm-6 col-md-6 mt-1">
+                      <button class="btn btn-secondary dropdown-toggle monthdropdownButton  " type="button" id="" data-bs-toggle="dropdown" data-bs-display="static">
+                          Month</button>
+                      <ul class="dropdown-menu" aria-labelledby="MonthButton">
+                          <li><a class="dropdown-item" href="#">January</a></li>
+                          <li><a class="dropdown-item" href="#">February</a></li>
+                          <li><a class="dropdown-item" href="#">March</a></li>
+                          <li><a class="dropdown-item" href="#">April</a></li>
+                          <li><a class="dropdown-item" href="#">May</a></li>
+                          <li><a class="dropdown-item" href="#">June</a></li>
+                          <li><a class="dropdown-item" href="#">July</a></li>
+                          <li><a class="dropdown-item" href="#">August</a></li>
+                          <li><a class="dropdown-item" href="#">September</a></li>
+                          <li><a class="dropdown-item" href="#">October</a></li>
+                          <li><a class="dropdown-item" href="#">November</a></li>
+                          <li><a class="dropdown-item" href="#">December</a></li>
+                      </ul>
+
+                      <button class="btn btn-secondary r dropdown-toggle yeardropdownButton   " type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+                        Year
+                      </button>
+                      <ul class="dropdown-menu " aria-labelledby="YearButton">
+                        <li><a class="dropdown-item" href="#">2021</a></li>
+                        <li><a class="dropdown-item" href="#">2022</a></li>
+                        <li><a class="dropdown-item" href="#">2023</a></li>
+                        <li><a class="dropdown-item" href="#">2024</a></li>
+                        <li><a class="dropdown-item" href="#">2025</a></li>
+                        <li><a class="dropdown-item" href="#">2026</a></li>
+                        <li><a class="dropdown-item" href="#">2027</a></li>
+                        <li><a class="dropdown-item" href="#">2028</a></li>
+                        <li><a class="dropdown-item" href="#">2029</a></li>
+                        <li><a class="dropdown-item" href="#">2030</a></li>
+                        <li><a class="dropdown-item" href="#">2031</a></li>
+                        <li><a class="dropdown-item" href="#">2032</a></li> </ul>
+                      </div>
+                      
+                       
+                    </div>
+
+                                                                          <!--Cardholder's Name-->
+                      <div class="row mt-2">
+                        <div class=" col-12 col-sm-5 col-md-4 col-lg-4 col-xl-3 ">
+                          <label for="crcardname">Card Holder :</label>
+                        </div>
+                        <div class="col-11 col-sm-7 col-md-5  ">
+                          <input type="text" class="form-control " id="crcardname" placeholder="Name as on Card">
+                        </div>
+                      </div>
+                                                                                  <!--CVV-->
+                      <div class="row mt-2">
+                        <div class="col-md-4 col-lg-4 col-sm-5 col-xl-3 col-12 ">
+                          <label for="creditcvv">CVV :</label>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-lg-2 col-5 ">
+                          <input type="password" class="form-control " id="creditcvv" maxlength="3">
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-2">
+                        <h2> <i class="bi bi-credit-card-2-back"></i> </h2>
+                        </div>
+                      </div>  
+                      <div class="row mt-1">
+                        <div class="col-md-12 col-sm-12 ">
+                          <div class="form-check">
+                            <input class="form-check-input " type="checkbox" value="" id="cardpayment">
+                            <label class="form-check-label" for="cardpayment">
+                          Save this card and make single-click payments.   
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-1">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-check">
+                            <input class="form-check-input " type="checkbox" value="" id="bookingpolicy">
+                            <label class="form-check-label" for="bookingpolicy">
+                              I understand and agree to the rules and restrictions of this fare,
+                              <a href="#"style="color:#f84e8c">Booking policy</a>
+                              the Privacy Policy and the
+                              <a href="#"style="color:#f84e8c">Terms & Condition</a>
+                              of Cleartip.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-sm-9 col-md-12">
+                        <strong>  <label class="amount">₹12,345.00</label></strong>
+                          <p class="amttxt">(Total inclusive all taxes)</p>
+                        </div>
+                      </div>           
+                      <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                          <button type="submit" class="btn makepaymentbtn text-white" id="creditpayment">Make Payment</button>
+                        </div>
+                      </div>
+                    </form>  
+                        </div>
+
+
+                                                                          <!--DEBIT CARD-->
+                    
+                <div class="tab-pane fade" id="v-pills-debitcard" role="tabpanel" aria-labelledby="v-pills-debitcard-tab">Enter your Debit Card Details
+                 
+                  <form action="#">
+                    <div class="row mt-2">
+                    <div class="col-md-5 col-lg-4 col-sm-5 col-xl-3 col-12">
+                    <label  for="debitcardno">Card Number:</label>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-lg-5 col-11">
+                    <input type="text" class="form-control" id="debitcardno" placeholder="Debit card No">
+                    </div>
+                    <div class="col-md-2 col-sm-2 mt-1 col-lg-3">
+                    <img src="..\assets\images\banklogos\mc1.png" alt="LOGO" class="img-fluid cardlogo" width="40" height="5" id="logo3">
+                    </div>
+                  </div>
+                                                                                  <!--Expiry Date-->
+                    <div class="row mt-1">
+                    <div class="col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3 mt-1">
+                      <label>Expiry Date :</label>
+                    </div>
+                    <div class="dropdown col-12 col-sm-6 col-md-6 mt-1">
+                      <button class="btn btn-secondary dropdown-toggle monthdropdownButton " type="button" id="" data-bs-toggle="dropdown" data-bs-display="static">
+                          Month</button>
+                      <ul class="dropdown-menu" aria-labelledby="MonthButton">
+                          <li><a class="dropdown-item" href="#">January</a></li>
+                          <li><a class="dropdown-item" href="#">February</a></li>
+                          <li><a class="dropdown-item" href="#">March</a></li>
+                          <li><a class="dropdown-item" href="#">April</a></li>
+                          <li><a class="dropdown-item" href="#">May</a></li>
+                          <li><a class="dropdown-item" href="#">June</a></li>
+                          <li><a class="dropdown-item" href="#">July</a></li>
+                          <li><a class="dropdown-item" href="#">August</a></li>
+                          <li><a class="dropdown-item" href="#">September</a></li>
+                          <li><a class="dropdown-item" href="#">October</a></li>
+                          <li><a class="dropdown-item" href="#">November</a></li>
+                          <li><a class="dropdown-item" href="#">December</a></li>
+                      </ul>
+
+                      <button class="btn btn-secondary r dropdown-toggle  yeardropdownButton " type="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+                        Year
+                      </button>
+                      <ul class="dropdown-menu " aria-labelledby="YearButton">
+                        <li><a class="dropdown-item" href="#">2021</a></li>
+                        <li><a class="dropdown-item" href="#">2022</a></li>
+                        <li><a class="dropdown-item" href="#">2023</a></li>
+                        <li><a class="dropdown-item" href="#">2024</a></li>
+                        <li><a class="dropdown-item" href="#">2025</a></li>
+                        <li><a class="dropdown-item" href="#">2026</a></li>
+                        <li><a class="dropdown-item" href="#">2027</a></li>
+                        <li><a class="dropdown-item" href="#">2028</a></li>
+                        <li><a class="dropdown-item" href="#">2029</a></li>
+                        <li><a class="dropdown-item" href="#">2030</a></li>
+                        <li><a class="dropdown-item" href="#">2031</a></li>
+                        <li><a class="dropdown-item" href="#">2032</a></li> </ul>
+                      </div>
+                      
+                       
+                    </div>
+
+                                                                          <!--Cardholder's Name-->
+                      <div class="row mt-2">
+                        <div class=" col-12 col-sm-5 col-md-4 col-lg-4 col-xl-3 ">
+                          <label for="dcardname">Card Holder :</label>
+                        </div>
+                        <div class="col-11 col-sm-7 col-md-5  ">
+                          <input type="text" class="form-control " id="dcardname" placeholder="Name as on Card">
+                        </div>
+                      </div>
+                                                                                  <!--CVV-->
+                      <div class="row mt-2">
+                        <div class="col-md-4 col-lg-4 col-sm-5 col-12 col-xl-3 ">
+                          <label for="debitcvv">CVV :</label>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-lg-2 col-5 ">
+                          <input type="password" class="form-control " id="debitcvv" maxlength="3">
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-2">
+                        <h2> <i class="bi bi-credit-card-2-back"></i> </h2>
+                        </div>
+                      </div>  
+                      <div class="row mt-1">
+                        <div class="col-md-12 col-sm-12 ">
+                          <div class="form-check">
+                            <input class="form-check-input " type="checkbox" value="" id="dcardpayment">
+                            <label class="form-check-label" for="dcardpayment">
+                          Save this card and make single-click payments.   
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-1">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="form-check">
+                            <input class="form-check-input " type="checkbox" value="" id="dbookingpolicy">
+                            <label class="form-check-label" for="dbookingpolicy">
+                              I understand and agree to the rules and restrictions of this fare,
+                              <a href="#"style="color:#f84e8c">Booking policy</a>
+                              the Privacy Policy and the
+                              <a href="#"style="color:#f84e8c">Terms & Condition</a>
+                              of Cleartip.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div class="col-sm-9 col-md-12">
+                        <strong>  <label class="amount">₹12,345.00</label></strong>
+                          <p class="amttxt">(Total inclusive all taxes)</p>
+                        </div>
+                      </div>           
+                      <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                          <button type="submit" class="btn makepaymentbtn text-white" id="creditpayment">Make Payment</button>
+                        </div>
+                      </div>
+                    </form>  
+                        </div>
+
+
+
+                                                                               <!--NET BANKING-->
+
+                <div class="tab-pane fade" id="v-pills-netbanking" role="tabpanel" aria-labelledby="v-pills-netbanking-tab"> Enter your Net Banking Details
+                            <form action="#">
+                                <div class="row mt-1">
+                                  <div class="col-sm-8 col-md-10  ">
+                                    <p>POPULAR BANKS</p>
+                                  </div>
+                                </div>
+                                <div class="row mt-2">
+                                  <div class=" col-sm-12 col-md-10 col-xl-8 col-xxl-10 justify-content-center">
+                                    <div class="form-check form-check-inline  ">
+                                      <label class="box ">
+                                        <input type="radio" name="bank" id="axisbank">
+                                        <img src="..\assets\images\banklogos\axis.png" width="70" height="33" />
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline  ">
+                                    <label class="box">
+                                      <input type="radio" name="bank" id="icicibank">
+                                      <img src="..\assets\images\banklogos\icici.jpg" width="70" height="33"/>
+                                    </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                    <label class="box">
+                                      <input type="radio" name="bank" id="sbibank">
+                                      <img src="..\assets\images\banklogos\sbi1.jpg" width="70" height="33"/>
+                                    </label>
+                                    </div>
+                                 
+                                    <div class="form-check form-check-inline ">
+                                      <label class="box">
+                                        <input type="radio" name="bank" id="canarabank">
+                                        <img src="..\assets\images\banklogos\canara.png" width="70" height="33"/>
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline ">
+                                    <label class="box">
+                                      <input type="radio" name="bank" id="kotakbank">
+                                      <img src="..\assets\images\banklogos\kotak.png"  width="70" height="33"/>
+                                    </label>
+                                    </div>
+                                    <div class="form-check form-check-inline ">
+                                    <label class="box">
+                                      <input type="radio" name="bank" id="hdfcbank">
+                                      <img src="..\assets\images\banklogos\hdfc.png" width="70" height="33" />
+                                    </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mt-1">
+                                  <div class="col-md-5 ">
+                                    <p>Other Banks</p>
+                                  <div class="col-md-4 col-lg-5 col-2 ">
+                                    <button class="btn btn-secondary dropdown-toggle " type="button" id="bankropdownButton" data-bs-toggle="dropdown">
+                                      Select Bank </button>
+                                  <ul class="dropdown-menu dropdown-menu-sm-start " aria-labelledby="bankButton">
+                                      <li><a class="dropdown-item" href="#">A</a></li>
+                                      <li><a class="dropdown-item" href="#">February</a></li>
+                                      <li><a class="dropdown-item" href="#">March</a></li>
+                                      <li><a class="dropdown-item" href="#">April</a></li>
+                                      
+                                  </ul>
+                                  </div>
+                                  </div>
+                                </div>
+                                  <div class="row mt-1">
+                                    <div class="col-md-12 col-sm-12">
+                                      <div class="form-check mt-1">
+                                        <input class="form-check-input " type="checkbox" value="" id="fare">
+                                        <label class="form-check-label " for="fare">
+                                          I understand and agree to the rules and restrictions of this fare,
+                                          <a href="#"style="color:#f84e8c">Booking policy</a>
+                                          the Privacy Policy and the
+                                          <a href="#"style="color:#f84e8c">Terms & Condition</a>
+                                          of Cleartip.
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mt-1">
+                                    <div class="col-sm-9 col-md-8 col-lg-7">
+                                    <strong>  <label class="amount">₹12,345.00</label></strong>
+                                      <p class="amttxt">(Total inclusive all taxes)</p>
+                                    </div>
+                                  </div>
+                                    <div class="row ">
+                                    <div class="col-sm-6">
+                                      <button type="submit" class="btn makepaymentbtn text-white" id="netpayment">Make Payment</button>
+                                    </div>
+                                  </div>
+                                </form>                    
+                </div>
+
+
+                                                                              <!--UPI DETAILS-->
+
+
+                <div class="tab-pane fade" id="v-pills-upi" role="tabpanel" aria-labelledby="v-pills-upi-tab">
+                  Enter Your UPI Details
+                            <form action="#">
+                                <div class="row mt-2 justify-content-start">
+                                  <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mt-1">
+                                    <label for="upino">UPI ID :</label>
+                                    </div>
+                                    <div class="col-11 col-sm-8 col-md-7 mt-1 col-lg-8">
+                                      <input type="text" class="form-control" id="upino" placeholder="Enter Your UPI ID">
+                                      <div class="form-text mt-3" style="color:#f84e8c">Payment request will be sent to the phone no. linked to your UPI ID</div>
+                                    </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                      <div class="col-md-12 col-sm-12 mt-3">
+                                        <div class="form-check">
+                                          <input class="form-check-input " type="checkbox" value="" id="agreement">
+                                          <label class="form-check-label" for="agreement">
+                                            I understand and agree to the rules and restrictions of this fare,
+                                            <a href="#"style="color:#f84e8c">Booking policy</a>
+                                            the Privacy Policy and the
+                                            <a href="#"style="color:#f84e8c">Terms & Condition</a>
+                                            of Cleartip.
+                                          </label>
+                                        </div>
+                                      </div>
+                                     
+              
+                                    </div>
+                                    <div class="row mt-3">
+                                      <div class="col-md-10 mt-3">
+                                        <strong><label class="amount">₹12,345.00</label></strong>
+                                        <p class="amttxt">(Total inclusive all taxes)</p>
+                                      </div>
+                                      <div class="col-md-5 col-sm-6 mt-3">
+                                        <button type="submit" class="btn makepaymentbtn text-white" id="upipaymentbtn">Make Payment</button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+
+  
+
+  
+ 
+  
