@@ -353,7 +353,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* Wrappers
 =================*/
 .b-wrapper, .b-header, .b-search, .b-flight, .b-results {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .b-wrapper:before, .b-header:before, .b-search:before, .b-flight:before, .b-results:before, .b-header:after, .b-search:after, .b-flight:after, .b-results:after {
@@ -1097,7 +1097,8 @@ span.line-under {
   text-align: left;
   display: block;
   float: none;
-  margin: 15px 15px 35px;
+  /* margin: 15px 15px 35px; */
+  margin: 5px 5px 5px;
   padding: 10px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -1140,7 +1141,7 @@ span.line-under {
   height: 165px;
 }
 
-.b-flight_info__half,
+/* .b-flight_info__half,
 .b-flight_info__full {
   float: left;
   margin: 20px 0 0;
@@ -1151,9 +1152,10 @@ span.line-under {
 }
 .b-flight_info__full {
   width: 300px;
-}
+} */
 .b-flight_info-wrapper {
-  float: left;
+  /* float: left; */
+  text-align: center;
 }
 .b-flight_info-wrapper:before, .b-flight_info-wrapper:after {
   content: " ";
@@ -1162,12 +1164,12 @@ span.line-under {
 .b-flight_info-wrapper:after {
   clear: both;
 }
-.b-flight_info__title {
+/* .b-flight_info__title {
   font-family: "exo_2medium_italic";
   color: #1888df;
   font-size: 1.2em;
   line-height: 1.4;
-}
+} */
 /* .b-flight_info__title-small {
   color: #312e2d;
   font-size: 1em;
@@ -1189,6 +1191,9 @@ span.line-under {
 .b-flight_price {
   width: 320px;
   text-align: left;
+}
+.b-flight_price_oneway {
+  display: inline-table;
 }
 .b-flight_price:before, .b-flight_price:after {
   content: " ";
@@ -1538,7 +1543,7 @@ span.line-under {
 
 /* Result deals */
 .b-results-flights {
-  width: 680px;
+  width: 920px;
   float: left;
   padding: 60px 0 0 35px;
 }
@@ -1546,6 +1551,11 @@ span.line-under {
 .b-results-flights_list {
   position: relative;
   z-index: 200;
+  width: 430px;
+  display: inline-table;
+}
+.b-results-flights_list_oneway {
+  width: 900px;
 }
 .b-results-flights_list:before, .b-results-flights_list:after {
   content: " ";
@@ -2975,3 +2985,15 @@ span.line-under {
     font-size: 2.4em;
   } */
 }
+/* ====About flight card======= */
+.flexOne{
+  display: inline-table;
+  color: #ee3797;
+}
+.stop-info{
+  margin: 0.75rem 3.0rem 0.75rem;
+}
+/* .airlineName {
+  background-image: linear-gradient(#40a0ea, #136cb1);
+} */
+/* ====About flight card======= */

@@ -184,62 +184,224 @@
             <!-- flights result  -->
             <div class="b-results-flights">
                 <!-- return flights -->
-                <!-- <div class="b-results-flights_list" ng-show="error !== true && cityData.returnflights !== null"> -->
-    
-                    <!-- <div class="b-flight_item" ng-repeat="flight in cityData.returnflights.data"> -->
-                        <div class="b-flight_item" *ngFor="let flight of  (result.arrival_flight||result.departure_flight)">
+               
+                <!-- ======= -->
+                <div class="b-results-flights_list" *ngIf="defaultFlag == 1 && result.departure_flight !== null">
+                    <!-- <div class="b-flight_item" ng-repeat="flight in cityData.returnflights.data">&& error !== true  -->
+                        <div class="b-flight_item" *ngFor="let flight of  result.departure_flight">
                         <div class="b-flight_info-wrapper">
                             <div class="b-flight_price">
                                 <div class="b-flight_price__text">1 person</div>
-                                <!-- <div class="b-flight_price__total">{{flight.price}} <span class="b-flight_price__currency">Rs.</span></div> -->
+                                <div class="b-flight_price__total">4363 <span class="b-flight_price__currency">Rs.</span></div>
                                 <div class="book_now"><a href="#" class="book_now__button">Book Now</a></div>
                             </div>
-                             <div class="b-flight_info__half" >
-                                <!-- <div class="b-flight_info__title flight_code">{{flight.returnflight.flight1.flight}}</div>
-                                <div class="b-flight_info__title">{{flight.returnflight.flight1.city | shortname}} > {{flight.returnflight.flight2.city | shortname}}</div>
-                                <div class="b-flight_info__text flight_time">
-                                    Depart: {{flight.returnflight.flight1.arrivalTime | dateMilliseconds:"medium"}} <br>
-                                    Arrive: {{flight.returnflight.flight1.departureTime | dateMilliseconds:"medium"}}
-                                </div> -->
+                             <!-- ===== -->
+                             <div class="makeFlex spaceBetween appendBottom15">
+                                 <div class="timingOption makeFlex spaceBetween textCenter fontSize12">
+                                      <div class="flightTimeSection flexOne timeInfoLeft">
+                                         <div class="makeFlex flex-column flightTimeInfo">
+                                             <p class="blackText fontSize18 blackFont appendBottom2 makeFlex hrtlCenter">
+                                                 <span>{{flight.DepartureDateTime}}</span>
+                                              </p>
+                                              <p class="darkText">{{flight.DepartureAirportLocationCode}}</p>
+                                          </div>
+                                          <div class="plusDisplayText"></div>
+                                        </div>
+                                        <div class="stop-info flexOne">
+                                            <p>{{flight.JourneyDuration}}</p>
+                                            <div>
+                                                <div class="relative fliStopsSep">
+                                                    <p class="fliStopsSepLine" style="border-top: 3px solid rgb(81, 226, 194);"></p>
+                                                </div>
+                                                <p class="flightsLayoverInfo">{{flight.stops}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="flightTimeSection flexOne timeInfoRight">
+                                            <div class="makeFlex flex-column flightTimeInfo">
+                                                <p class="blackText fontSize18 blackFont appendBottom2 makeFlex hrtlCenter">
+                                                    <span>{{flight.ArrivalDateTime}}</span>
+                                                </p>
+                                                <p class="darkText">{{flight.ArrivalAirportLocationCode}}</p>
+                                            </div>
+                                            <div class="plusDisplayText"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="makeFlex priceInfo gap-x-10 ">
+                                        <div class="makeFlex column relative">
+                                            <p class="blackText fontSize16 blackFont appendRight12">₹ 7,424</p>
+                                        </div>
+                                        <span class="customRadioBtn">
+                                            <span class="outer">
+                                                <span class="inner"></span>
+                                            </span>
+                                        </span>
+                                    </div> -->
+                                </div>
+
+                          <!-- ====== -->
+                           
+                        </div>
+                        <!-- <div class="b-flight_image"> -->
+                            <!-- <img ng-src="{{flight.picture}}" alt="{{flight._id}}"> -->
+                            <!-- <img src="assets\images\i\blue\flight2.jpg" > -->
+                        <!-- </div> -->
+    
+                    </div>
+                </div>
+                <!-- half -->
+                <div class="b-results-flights_list" *ngIf="defaultFlag == 1 && result.arrival_flight !== null">
+                    <!-- <div class="b-flight_item" ng-repeat="flight in cityData.returnflights.data">&& error !== true  -->
+                        <div class="b-flight_item" *ngFor="let flight of  result.arrival_flight">
+                        <div class="b-flight_info-wrapper">
+                            <div class="b-flight_price">
+                                <div class="b-flight_price__text">1 person</div>
+                                <div class="b-flight_price__total">4363 <span class="b-flight_price__currency">Rs.</span></div>
+                                <div class="book_now"><a href="#" class="book_now__button">Book Now</a></div>
+                            </div>
+                             <!-- <div class="b-flight_info__half" >
+                               
                                 <div class="b-flight_info__title flight_code">{{flight.OperatingCarrierCode}}-{{flight.OperatingFlightNumber}}</div>
                                 <div class="b-flight_info__title">{{flight.DepartureAirportLocationCode}} > {{flight.ArrivalAirportLocationCode}}</div>
                                 <div class="b-flight_info__text flight_time">
                                     Depart: {{flight.DepartureDateTime}} <br>
                                     Arrive: {{flight.ArrivalDateTime}}
                                 </div>
-                            </div>
-                           <!-- <div class="b-flight_info__half">
-                                <div class="b-flight_info__title flight_code">{{flight.returnflight.flight2.flight}}</div>
-                                <div class="b-flight_info__title">{{flight.returnflight.flight2.city | shortname}} > {{flight.returnflight.flight1.city | shortname}}</div>
-                                <div class="b-flight_info__text flight_time">
-                                    Depart: {{flight.returnflight.flight2.arrivalTime | dateMilliseconds:"medium"}} <br>
-                                    Arrive: {{flight.returnflight.flight2.departureTime | dateMilliseconds:"medium"}}
+                             </div> -->
+                             <!-- ===== -->
+
+                             <div class="makeFlex spaceBetween appendBottom15">
+                                 <div class="timingOption makeFlex spaceBetween textCenter fontSize12">
+                                      <div class="flightTimeSection flexOne timeInfoLeft">
+                                         <div class="makeFlex flex-column flightTimeInfo">
+                                             <p class="blackText fontSize18 blackFont appendBottom2 makeFlex hrtlCenter">
+                                                 <span>{{flight.DepartureDateTime}}</span>
+                                              </p>
+                                              <p class="darkText">{{flight.DepartureAirportLocationCode}}</p>
+                                          </div>
+                                          <div class="plusDisplayText"></div>
+                                        </div>
+                                        <div class="stop-info flexOne">
+                                            <!-- <p>02<font color="#757575"> h </font>45<font color="#757575"> m </font></p> -->
+                                            <p>{{flight.JourneyDuration}}</p>
+                                            <div>
+                                                <div class="relative fliStopsSep">
+                                                    <p class="fliStopsSepLine" style="border-top: 3px solid rgb(81, 226, 194);"></p>
+                                                </div>
+                                                <p class="flightsLayoverInfo">{{flight.stops}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="flightTimeSection flexOne timeInfoRight">
+                                            <div class="makeFlex flex-column flightTimeInfo">
+                                                <p class="blackText fontSize18 blackFont appendBottom2 makeFlex hrtlCenter">
+                                                    <span>{{flight.ArrivalDateTime}}</span>
+                                                </p>
+                                                <p class="darkText">{{flight.ArrivalAirportLocationCode}}</p>
+                                            </div>
+                                            <div class="plusDisplayText"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="makeFlex priceInfo gap-x-10 ">
+                                        <div class="makeFlex column relative">
+                                            <p class="blackText fontSize16 blackFont appendRight12">₹ 7,424</p>
+                                        </div>
+                                        <span class="customRadioBtn">
+                                            <span class="outer">
+                                                <span class="inner"></span>
+                                            </span>
+                                        </span>
+                                    </div> -->
                                 </div>
-                            </div> -->
-                            <div class="b-flight_info__half" >
-                                <div class="b-flight_info__title flight_code">{{flight.OperatingCarrierCode}}-{{flight.OperatingFlightNumber}}</div>
-                                <div class="b-flight_info__title">{{flight.ArrivalAirportLocationCode}} >{{flight.DepartureAirportLocationCode}}</div>
-                                <div class="b-flight_info__text flight_time">
-                                    Depart: {{flight.DepartureDateTime}} <br>
-                                    Arrive: {{flight.ArrivalDateTime}}
-                                </div>
-                            </div>
+
+                          <!-- ====== -->
+                           
                         </div>
-                        <div class="b-flight_image">
+                        <!-- <div class="b-flight_image"> -->
                             <!-- <img ng-src="{{flight.picture}}" alt="{{flight._id}}"> -->
-                            <img src="assets\images\i\blue\flight2.jpg" >
-                        </div>
+                            <!-- <img src="assets\images\i\blue\flight2.jpg" > -->
+                        <!-- </div> -->
     
-                    <!-- </div> -->
+                    </div>
     
                 </div>
+                <!-- ======== -->
     
                 <!-- one way flights -->
-                <!-- <div class="b-results-flights_list" ng-show="error !== true && cityData.singleflights !== null"> -->
-                    <div class="b-results-flights_list" >
+                <div class="b-results-flights_list b-results-flights_list_oneway" *ngIf="defaultFlag == 2 && result.departure_flight !== null">
+                    <!-- <div class="b-flight_item" ng-repeat="flight in cityData.returnflights.data">&& error !== true  -->
+                        <div class="b-flight_item" *ngFor="let flight of  result.departure_flight">
+                        <div class="b-flight_info-wrapper">
+
+                            <div class="makeFlex align-items-center gap-x-10 airline-info-wrapper b-flight_price_oneway" style="    padding: 30px 30px 10px;">
+                                <span class="">
+                                    <span class="arln-logo logo1" style="background-image: url(&quot;https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/G8.png?v=7&quot;);"></span>
+                                </span>
+                                <div class="makeFlex align-items-center  "><span style="background-image: linear-gradient(#40a0ea, #136cb1);" class="boldFont blackText airlineName">Go First</span>
+                                </div>
+                            </div>
+                            
+                             <!-- ===== -->
+                             <div class="makeFlex spaceBetween appendBottom15 b-flight_price_oneway">
+                                 <div class="timingOption makeFlex spaceBetween textCenter fontSize12">
+                                      <div class="flightTimeSection flexOne timeInfoLeft">
+                                         <div class="makeFlex flex-column flightTimeInfo">
+                                             <p class="blackText fontSize18 blackFont appendBottom2 makeFlex hrtlCenter">
+                                                 <span>18:40</span>
+                                              </p>
+                                              <p class="darkText">{{flight.DepartureAirportLocationCode}}</p>
+                                          </div>
+                                          <div class="plusDisplayText"></div>
+                                        </div>
+                                        <div class="stop-info flexOne">
+                                            <!-- <p>02<font color="#757575"> h </font>45<font color="#757575"> m </font></p> -->
+                                            <p>{{flight.JourneyDuration}}</p>
+                                            <div>
+                                                <div class="relative fliStopsSep">
+                                                    <p class="fliStopsSepLine" style="border-top: 3px solid rgb(81, 226, 194);"></p>
+                                                </div>
+                                                <p class="flightsLayoverInfo">{{flight.stops}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="flightTimeSection flexOne timeInfoRight">
+                                            <div class="makeFlex flex-column flightTimeInfo">
+                                                <p class="blackText fontSize18 blackFont appendBottom2 makeFlex hrtlCenter">
+                                                    <span>21:25</span>
+                                                </p>
+                                                <p class="darkText">{{flight.ArrivalAirportLocationCode}}</p>
+                                            </div>
+                                            <div class="plusDisplayText"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="makeFlex priceInfo gap-x-10 ">
+                                        <div class="makeFlex column relative">
+                                            <p class="blackText fontSize16 blackFont appendRight12">₹ 7,424</p>
+                                        </div>
+                                        <span class="customRadioBtn">
+                                            <span class="outer">
+                                                <span class="inner"></span>
+                                            </span>
+                                        </span>
+                                    </div> -->
+                                </div>
+                                <div class="b-flight_price b-flight_price_oneway" style="    padding: 0px 0px 0px 40px;">
+                                    <!-- <div class="b-flight_price__text">1 person</div> -->
+                                    <div class="b-flight_price__total">4363 <span class="b-flight_price__currency">Rs.</span></div>
+                                    <div class="book_now"><a href="#" class="book_now__button">Book Now</a></div>
+                                </div>
+
+                          <!-- ====== -->
+                           
+                        </div>
+                        <!-- <div class="b-flight_image"> -->
+                            <!-- <img ng-src="{{flight.picture}}" alt="{{flight._id}}"> -->
+                            <!-- <img src="assets\images\i\blue\flight2.jpg" > -->
+                        <!-- </div> -->
     
-                    <!-- <div class="b-flight_item" ng-repeat="flight in cityData.singleflights.data"> -->
-                        <div class="b-flight_item" *ngFor="let flight of filteredContentFlight">
+                    </div>
+                </div>
+                <!-- <div class="b-results-flights_list" ng-show="error !== true && cityData.singleflights !== null"> -->
+                    <!-- <div class="b-results-flights_list" *ngIf="defaultFlag == 2 && error !== true && result.departure_flight !== null">
+    
+                        <div class="b-flight_item" *ngFor="let flight of result.departure_flight">
                         <div class="b-flight_info-wrapper">
                             <div class="b-flight_price">
                                 <div class="b-flight_price__text">1 person</div>
@@ -261,7 +423,7 @@
     
                     </div>
     
-                </div>
+                </div> -->
             </div>
     
     

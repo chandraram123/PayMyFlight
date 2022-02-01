@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { FlightsearchServiceService } from '../home-services/flightsearch/flightsearch-service.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AutocompleteServeiceService } from '../home-services/autocomplete/autocomplete-serveice.service';
+import * as moment from 'moment';
 declare var $: any;
 @Component({
   selector: 'flightList-page',
@@ -108,10 +109,48 @@ export class FlightList implements OnInit {
     
     data_.forEach((i)=>{
        if(i.DepartureAirportLocationCode+i.ArrivalAirportLocationCode!=DepartureCode) {
-         result.departure_flight.push('D:'+JSON.stringify(i))
+      
+         result.departure_flight.push(i)
      } else{
-         result.arrival_flight.push('A:'+JSON.stringify(i))
-        //  result.departure_flight.arrival_flight
+         result.arrival_flight.push(i)
+      //   //  result.arrival_flight.push('A:'.concat(JSON.stringify(i)))
+      //   //  result.departure_flight.arrival_flight
+      //   // console.log(i.ArrivalAirportLocationCode);
+      //   let jsonArr = [
+      //     {
+      //       ArrivalAirportLocationCode: i.ArrivalAirportLocationCode,
+      //       ArrivalDateTime: i.ArrivalDateTime,
+      //       DepartureAirportLocationCode: i.DepartureAirportLocationCode,
+      //       DepartureDateTime: i.DepartureDateTime,
+      //       Equipment: i.Equipment,
+      //       JourneyDuration: i.JourneyDuration,
+      //       MarketingCarriercode: i.MarketingCarriercode,
+      //       MarketingFlightNumber: i.MarketingFlightNumber,
+      //       OperatingCarrierCode: i.OperatingCarrierCode,
+      //       OperatingFlightNumber: i.OperatingFlightNumber,
+      //       SegmentRef: i.SegmentRef
+      //     }
+      // ]
+        
+      //   let idModified = jsonArr.map(
+      //     obj => {
+      //         return {
+      //             "_ArrivalAirportLocationCode" : obj.ArrivalAirportLocationCode,
+      //             "_ArrivalDateTime":obj.ArrivalDateTime,
+      //             "_DepartureAirportLocationCode":obj.DepartureAirportLocationCode,
+      //             "_DepartureDateTime":obj.DepartureDateTime,
+      //             "_Equipment" : obj.Equipment,
+      //             "_JourneyDuration":obj.JourneyDuration,
+      //             "_MarketingCarriercode":obj.MarketingCarriercode,
+      //             "_MarketingFlightNumber":obj.MarketingFlightNumber,
+      //             "_OperatingCarrierCode" : obj.OperatingCarrierCode,
+      //             "_OperatingFlightNumber":obj.OperatingFlightNumber,
+      //             "_SegmentRef":obj.SegmentRef
+      //         }
+      //     }
+      // );
+      // // console.log(idModified);
+      // result.arrival_flight.push(idModified)
      } 
         
     })
@@ -121,26 +160,67 @@ export class FlightList implements OnInit {
 }
 
 // const result= get_flight_sq(data.Data.FlightSegmentList,'BLR','')
+// let time= {
+//   hours:[],
+//   minutes:[]
+// }
 reaponse.Data.FlightSegmentList.forEach((i)=>{
+  i.DepartureDateTime= moment(i.DepartureDateTime, "YYYY-MM-DD HH:mm:SS").format("HH:mm");
+  i.ArrivalDateTime= moment(i.ArrivalDateTime, "YYYY-MM-DD HH:mm:SS").format("HH:mm");
+  
+  var hours = Math.trunc(i.JourneyDuration/60);
+  var minutes = i.JourneyDuration % 60;
+  if(hours<10 && minutes<10){
+    i.JourneyDuration= ''+0+ hours +"h "+0+ minutes +"m";
+  }else if(hours<10 && minutes>10){
+    i.JourneyDuration= ''+0+ hours +"h "+ minutes +"m";
+  }else if(hours>10 && minutes<10){
+    i.JourneyDuration= hours +"h "+0+ minutes +"m";
+  }else{
+    i.JourneyDuration= hours +"h "+ minutes +"m";
+  }
+  // console.log(hours +":"+ minutes);
+
+  if(i.stops == 0){
+    i.stops = 'Non stop';
+  }else{
+    i.stops = '1 stop via ';
+  }
+
   const result= get_flight_sq(reaponse.Data.FlightSegmentList, i.ArrivalAirportLocationCode+i.DepartureAirportLocationCode,'')
   this.result.arrival_flight=result.arrival_flight
   this.result.departure_flight=result.departure_flight
   console.log(result);
-  // console.log();
+  
 })
-let result1: any=[];
-for(let i=0;i<(this.result.departure_flight.length||this.result.arrival_flight.length);i++){
-  console.log(this.result.arrival_flight[i]);
-  result1.push(this.result.arrival_flight[i]+this.result.departure_flight[i]);
-  console.log(result1);
-}
-this.filteredContentFlight=result1;
+
+//  const result = this.result.departure_flight.map(o => ({ ...o, foo: 'Date' }));
+
+// let result1: any=[];
+// for(let i=0;i<(this.result.departure_flight.length||this.result.arrival_flight.length);i++){
+//   // console.log(this.result.arrival_flight[i]);
+//   // result1.push(this.result.arrival_flight[i]+this.result.departure_flight[i]);
+//   // result1.push(this.result.arrival_flight[i].concat(this.result.departure_flight[i]));
+//   // this.result.arrival_flight[i]=(this.result.arrival_flight[i].concat(this.result.arrival_flight[i]));
+//   // console.log(this.result);
+// //   let employee = {
+// //     ...this.result.arrival_flight[i],
+// //     ...this.result.departure_flight[i]
+// // };
+//   let employee = Object.assign(this.result.arrival_flight[i], this.result.departure_flight[i]);
+//   this.result.arrival_flight[i]=employee;
+// console.log(employee[0]._ArrivalAirportLocationCode);
+// }
+
+
+
+
 // const result= get_flight_sq(data.Data.FlightSegmentList, '','')
 // console.log(result)
     // ==========================
     // this.filteredContentFlight=reaponse.Data.FlightSegmentList;
     // this.filteredContentFlight=this.result.arrival_flight;
-    console.log(this.filteredContentFlight);
+    // console.log(this.filteredContentFlight);
 
     this.subscribePaymentTypeChanges();
     this.setPaymentMethodType(this.PAYMENT_METHOD_TYPE.UPI);

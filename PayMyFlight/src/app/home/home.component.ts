@@ -106,7 +106,7 @@ export class HomeComponent implements OnInit {
     // sessionStorage.setItem("rootType",JSON.stringify(this.rootType));
     console.log(this.defaultFlag);
       
-        // sessionStorage.setItem("defaultFlag",JSON.stringify(this.defaultFlag));
+        sessionStorage.setItem("defaultFlag",JSON.stringify(this.defaultFlag));
         // let rootType = sessionStorage.getItem("rootType");
         // if(JSON.parse(rootType)==1){
         //   sessionStorage.setItem("rootType",JSON.stringify(2));
@@ -649,7 +649,8 @@ export class HomeComponent implements OnInit {
         sessionStorage.setItem("rootType",JSON.stringify(1));
       }
       let rootTypeNew = sessionStorage.getItem("rootType");
-      // this.defaultFlag = JSON.parse(rootTypeNew)
+      this.defaultFlag = JSON.parse(rootTypeNew)
+      sessionStorage.setItem("defaultFlag",JSON.stringify(this.defaultFlag));
       
       // console.log( type);
       // update payment method type value
@@ -910,12 +911,12 @@ export class HomeComponent implements OnInit {
       
         "OriginDestinationInformations": [
           {
-            "DepartureDateTime": "2021-12-31T00:00:00",
+            "DepartureDateTime": "2022-02-01T00:00:00",
             "OriginLocationCode": "BLR",
             "DestinationLocationCode": "DXB"
       },
          {
-            "DepartureDateTime": "2021-12-31T00:00:00",
+            "DepartureDateTime": "2022-02-01T00:00:00",
             "OriginLocationCode": "DXB",
             "DestinationLocationCode": "BLR"
           }
@@ -955,7 +956,7 @@ export class HomeComponent implements OnInit {
       "OriginDestinationInformations": [
       
       {
-        "DepartureDateTime": "30 December, 2021",
+        "DepartureDateTime": "2022-02-01T00:00:00",
         "OriginLocationCode": "DXB",
         "DestinationLocationCode": "BLR"
       }

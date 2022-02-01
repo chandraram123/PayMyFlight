@@ -61,11 +61,12 @@ fetchData(body: any) {
     // console.log(headers.get('Authorization')) 
    
   // return this.http.get("assets/Json/OneWay.Json").pipe((data) => {
-    return this.http.post('https://restapidemo.myfarebox.com/api/v2/Search/Flight',body ).pipe((data) => {
-    return data;
-    console.log(data)
+    return this.http.post('https://restapidemo.myfarebox.com/api/v2/Search/Flight',body )
+  //   .pipe((data) => {
+  //   return data;
+  //   console.log(data)
     
-  })
+  // })
 }
 // here we set/change value of the observable
 setData(data) { 
